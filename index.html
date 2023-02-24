@@ -187,6 +187,20 @@
       data-paypal-v4="true"
       data-currency="EUR"
     />
+    <style>
+      #main-button:hover {
+        background-color: #85c3bc !important;
+        color: #fff !important;
+      }
+      #nav-menu-items a:hover {
+        color: #85c3bc !important;
+      }
+      #pagefooter a:hover { color:#85c3bc !important;}
+      #absch-btn:hover{
+        background-color: #85c3bc !important;
+        color: #fff !important;
+      }
+    </style>
     <script>
       (function () {
         var scripts = [
@@ -1461,7 +1475,7 @@
           id="pageheader"
           class="pageheader pageheader--layout-inline-menu-left"
         >
-          <div class="logo-area container container--no-max">
+          <div class="logo-area container container--no-max" id="nav-menu-items">
             <div class="logo-area__left">
               <div class="logo-area__left__inner">
                 <button
@@ -1936,8 +1950,8 @@
                             <p>DAS HAUS AROMAS ARTESANALES</p>
                           </div>
                         </div>
-                        <div class="lightly-spaced-row-above">
-                          <span class="overlay-text__button button altcolour"
+                        <div class="lightly-spaced-row-above" >
+                          <span class="overlay-text__button button altcolour" id="main-button"
                             >SHOP</span
                           >
                         </div>
@@ -2325,7 +2339,7 @@
                         aria-label="E-Mail"
                       />
                     </p>
-                    <button class="button signup-form__button" type="submit">
+                    <button class="button signup-form__button" type="submit" id="absch-btn">
                       Abschicken
                     </button>
                   </form>
