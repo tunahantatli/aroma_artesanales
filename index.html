@@ -216,6 +216,14 @@
 	      box-shadow: 2px 2px 3px #999;
         z-index:100  
       }
+      .videoAdd {
+        
+        margin: 0 auto;
+        width: 800px; 
+        height:316.4px; 
+        background-size: 670px;
+        overflow: hidden;
+      }
     </style>
     <script>
       (function () {
@@ -1988,9 +1996,14 @@
                   <div
                     class="gallery__item gallery__item-5 image-overlay image-overlay--bg-full image-overlay--edge-boxes lazyload--placeholder"
                     data-cc-animate
-                    style="left: 0; top: 0;"
                   >
-                    <video width="700px" height="auto" controls><source src="./trailer.mp4" type="video/mp4"></video>
+                  <div class="wrapper">
+                    <video class="videoAdd" controls autoplay>
+                     <source src="./trailer.mp4" type="video/mp4">
+                     
+                    </video>
+                   </div>
+                    
                   </div>
                 
                   <div
@@ -2016,6 +2029,19 @@
                             />
                           </div>
                         </noscript>
+                      </div>
+                      <div
+                        class="overlay-text overlay--v-top overlay--h-left image-overlay__over"
+                        style="background-color: rgba(0,0,0,0.5);"
+                      >
+                        <div class="overlay-text__inner">
+                          <div class="overlay-text__text">
+                            <h2 class="overlay-text__title h4-style">
+                              Lorem, ipsum dolor.
+                            </h2>
+                            <p class="overlay-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur maiores facere possimus, libero molestiae sint reprehenderit, nihil laudantium accusantium nostrum iusto explicabo distinctio quam ea. Rerum, incidunt provident. Sed, repellendus!</p>
+                          </div>
+                        </div>
                       </div>
                     </a>
                   </div>
